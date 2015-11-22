@@ -1,0 +1,1 @@
+# example-istanbul-gulp-coverage
