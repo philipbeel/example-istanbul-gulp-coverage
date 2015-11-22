@@ -1,0 +1,27 @@
+{
+  "name": "example-istanbul-gulp-coverage",
+  "version": "0.1.0",
+  "description": "Example project demonstating istanbul code coverage",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -b -R spec --recursive --timeout 6000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipbeel/example-istanbul-gulp-coverage.git"
+  },
+  "keywords": [
+    "javascript",
+    "istanbul",
+    "mocha"
+  ],
+  "author": "Philip Beel @philipbeel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipbeel/example-istanbul-gulp-coverage/issues"
+  },
+  "homepage": "https://github.com/philipbeel/example-istanbul-gulp-coverage#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
