@@ -1,12 +1,17 @@
-var open = require('gulp-open');
-var jsonminify = require('gulp-jsonminify');
-var zip = require('gulp-zip');
-var uglifyConf = {
-    compress: {
-        // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
-        drop_console: true
-    }
-};
+var gulp = require('gulp');
+var karma = require('gulp-karma');
+
+
+gulp.task('unit', function() {
+  return gulp.src([])
+    .pipe(karma({
+      configFile: './karma.conf.js',
+      action: 'run'
+    }))
+    .on('error', function(err) {
+      throw err;
+    });
+});
 
 /**
  * @name unit:coverage
@@ -22,7 +27,6 @@ gulp.task('unit:coverage', function() {
                 'calculator/js/*.js': ['coverage']
             },
             reporters: ['progress', 'coverage'],
-            // Configure the coverage reporter
             coverageReporter: {
                 type : 'html',
                 dir : 'coverage/',
@@ -51,5 +55,5 @@ gulp.task('coverage', ['unit:coverage'], function() {
  * `$ gulp`
  */
 gulp.task('default', ['clean'], function() {
-    gulp.start('images', 'html', 'amd');
+    gulp.start('coverage');
 });
