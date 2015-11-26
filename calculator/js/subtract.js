@@ -1,6 +1,6 @@
 var calculator = calculator || {};
 
-calculator.add = function(firstNumber, secondNumber) {
+calculator.subtract = function(firstNumber, secondNumber) {
     if (!firstNumber || !secondNumber) {
         throw new Error('You must enter two parameters');
     }
@@ -9,5 +9,5 @@ calculator.add = function(firstNumber, secondNumber) {
         throw new Error('You must enter integers');
     }
 
-    return (firstNumber + secondNumber);
+    return (firstNumber - secondNumber);
 }
