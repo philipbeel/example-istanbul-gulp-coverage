@@ -44,4 +44,6 @@ gulp.task('coverage', ['unit:coverage'], function() {
  *
  * `$ gulp`
  */
-gulp.task('coverage');
+gulp.task('default', function() {
+  gulp.start('coverage');
+});
