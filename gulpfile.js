@@ -2,15 +2,6 @@ var gulp = require('gulp');
 var open = require('gulp-open');
 var karma = require('karma');
 
-gulp.task('unit', function(done) {
-  return new karma.Server({
-          configFile:  __dirname + '/karma.conf.js',
-          action: 'run',
-      }, done).on('error', function(err) {
-          throw err;
-      }).start();
-    });
-
 /**
  * @name unit:coverage
  * @description Runs unit tests with karma/phantomjs/mocha
@@ -53,4 +44,4 @@ gulp.task('coverage', ['unit:coverage'], function() {
  *
  * `$ gulp`
  */
-gulp.task('default');
+gulp.task('coverage');
