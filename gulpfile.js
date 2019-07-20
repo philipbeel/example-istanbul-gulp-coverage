@@ -1,5 +1,5 @@
 var gulp = require("gulp");
-var open = require("gulp-open");
+// var open = require("gulp-open");
 var Server = require("karma").Server;
 
 gulp.task("coverage:unit", done => {
@@ -29,7 +29,7 @@ gulp.task("coverage:unit", done => {
 gulp.task(
   "coverage",
   gulp.series("coverage:unit", done => {
-    gulp.src("./coverage/js/index.html").pipe(open());
+    // gulp.src("./coverage/js/index.html").pipe(open());
     done();
   })
 );
