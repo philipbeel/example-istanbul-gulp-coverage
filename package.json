@@ -22,7 +22,7 @@
     "chai": "^3.4.1",
     "gulp": "^4.0.2",
     "gulp-open": "^3.0.1",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "karma": "^4.2.0",
     "karma-chai": "^0.1.0",
     "karma-coverage": "^1.1.2",
